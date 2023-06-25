@@ -1,6 +1,7 @@
 
 :root{
     --red-color : #e01e1e;
+    --banner-color:#f6f6f6;
 }
 
 body{
@@ -30,6 +31,8 @@ header .side-header > img{
      width: 1.5rem;
      cursor: pointer;
 }
+
+
 
 header .header-wrapper {
     display: flex;
@@ -108,4 +111,41 @@ header .side-header > *{
          margin-bottom: 1rem;
     }
   }
+
+
+/* banner section   */
+
+.banner {
+    margin-top: 5rem;
+    text-align: center;
+    background-color: var(--banner-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner  h2 {
+    font-size: 1.7rem;
+}
+
+.banner  h2 img{
+   width: 2rem;
+   display: inline-block;
+}
+
+.banner p {
+   letter-spacing: 3px;
+   margin-bottom: 1rem;
+}
+
+
+.banner  h2 .red-word{
+    color: var(--red-color);
+}
+
+/* Making the banner section responsive */
+
+
   
