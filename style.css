@@ -13,7 +13,7 @@ body{
 header {
     display: flex;
     padding: 1rem;
-    max-width: 100rem;
+    max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
    
@@ -121,7 +121,7 @@ header .side-header > *{
     background-color: var(--banner-color);
     border-radius: 1rem;
     padding: 2rem;
-    max-width: 100rem;
+    max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -141,11 +141,87 @@ header .side-header > *{
 }
 
 
-.banner  h2 .red-word{
+ .red-word{
     color: var(--red-color);
 }
 
-/* Making the banner section responsive */
+/* Movie section */
+
+.movie{
+    margin-top: 5rem;
+    display: flex;
+    
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.movie > img {
+   margin-right: 5rem;
+   border-radius: 1rem;
+}
+
+.movie .movie-content {
+    max-width: 35rem;
+}
+
+.movie .movie-content h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.movie .movie-content p{
+    margin-bottom: 1rem;
+    color: rgb(95, 94, 94);
+}
+
+.movie .movie-content span:last-child{
+    margin-left: 0.5rem;
+}
+.movie .movie-content img {
+    width: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    
+    
+}
+
+.movie .movie-content .logo-content {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.movie .movie-content .logo-content span{
+    margin-right: 0.7rem;
+}
+
+/* making the movie section responsive */
+
+@media (max-width : 1154px){
+
+    .movie{
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .movie > img {
+       margin-bottom: 1rem;
+       margin-right: 0;
+     }
+}
+
+@media (max-width: 639px) {
+    /* CSS code for small screens */
+
+    .movie .movie-content h1{
+        font-size: 2.5rem;
+    }
+  }
+
+
 
 
   
