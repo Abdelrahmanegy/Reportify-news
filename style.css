@@ -215,9 +215,99 @@ header .side-header > *{
 
 @media (max-width: 639px) {
     /* CSS code for small screens */
-
+     
+    .movie{
+        padding: 1rem;
+    }
     .movie .movie-content h1{
         font-size: 2.5rem;
+
+
+    }
+  }
+
+
+/* latest News Section   */
+
+.title{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title h1{
+    font-size: 2.3rem;
+    font-family: sans-serif;
+}
+
+
+.title a {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+
+/* News items */
+
+.news-wrapper {
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+    column-gap: 1.5rem;
+    row-gap: 5rem;
+}
+
+
+.news-wrapper .news-item {
+    cursor: pointer;
+    
+}
+.news-wrapper .news-item > img {
+    width:25rem;
+    border-radius: 1rem;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.news-wrapper .news-item h1{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.news-wrapper .news-item p{
+    margin-bottom: 1.5rem;
+    color: rgb(106, 105, 105);
+}
+.news-wrapper .news-item .l-news-logo {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.news-wrapper .news-item span {
+    color: rgb(106, 105, 105);
+    margin-left: 0.5rem;
+}
+
+/* making the news section responsive */
+
+@media (max-width: 639px) {
+    /* CSS code for small screens */
+    .news-wrapper .news-item{
+        padding: 1rem;
+    }
+    .title{
+        padding: 1rem;
     }
   }
 
