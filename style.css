@@ -260,9 +260,7 @@ header .side-header > *{
 .news-wrapper {
     max-width: 90rem;
     margin-left: auto;
-    margin-right: auto;
-    
-    
+    margin-right: auto; 
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
     column-gap: 1.5rem;
@@ -272,6 +270,7 @@ header .side-header > *{
 
 .news-wrapper .news-item {
     cursor: pointer;
+    margin-bottom: 1rem;
     
 }
 .news-wrapper .news-item > img {
@@ -320,18 +319,30 @@ header .side-header > *{
     }
   }
 
+  @media (min-width: 640px) and (max-width: 821px) {
+    /* CSS code for medium screens */
+    .news-wrapper{
+        padding: 1rem;
+    }
+
+  }
+
+
+
+
+
 
   /* story section */
 
   .stories{
     margin-top: 8rem;
+    margin-bottom: 5rem;
   }
 
   .avatars-wrapper{
     display: flex;
-    flex-wrap: wrap;
-   
-   
+    flex-wrap: wrap; 
+   justify-content: center;
    max-width: 95rem;
    margin-left: auto;
    margin-right: auto;
@@ -342,7 +353,8 @@ header .side-header > *{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 2.3rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
   }
 
 
@@ -354,8 +366,7 @@ header .side-header > *{
     height: 7rem;
     object-fit: cover;
      border-radius: 50%; 
-    margin-bottom: 0.3rem;
-    
+    margin-bottom: 0.3rem;  
     border: 2px solid var(--red-color);
   }
 
@@ -365,13 +376,18 @@ header .side-header > *{
 
 
   /* making the stories section responsive */
+
+
+
+
+  
   @media (max-width: 639px) {
     /* CSS code for small screens */
     .avatars-wrapper .avatar-img img{
         width: 5rem;
         height: 5rem;
     }
-
+    
   }
 
 
@@ -385,6 +401,29 @@ header .side-header > *{
         padding: 1rem;
        }
   }
+
+
+  /* must read section */
+
+  .news-wrapper.must-read-wrapper{
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+  }
+
+
+ 
+
+
+  
+
+ 
+
+  
+    
+      
+  
+
+ 
+
    
   
 
