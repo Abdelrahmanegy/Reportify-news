@@ -410,6 +410,78 @@ header .side-header > *{
   }
 
 
+
+  /* Editor's picks section */
+
+  .editor-picks{
+    margin-top: 10rem;
+    
+  }
+
+
+  .editor-picks .e-p-banner{
+    padding-top: 12rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),
+    url("img/Editor_pick/iphone.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    height: 30rem;
+  }
+
+
+ .e-p-banner .news-wrapper .news-item h1{
+    font-size: 1.7rem;
+    color: #fff;
+ }
+
+ .e-p-banner .news-wrapper .news-item span{
+    color: #fff;
+ }
+
+ .e-p-banner .news-wrapper .news-item a {
+    color: #fff;
+ }
+
+
+ .e-p-banner .news-wrapper .news-item p{
+    color: #fff;
+ }
+
+
+ /* making the Editor's pick responsive */
+
+
+ @media (min-width: 640px) and (max-width: 821px) {
+    /* CSS code for medium screens */
+    .editor-picks .e-p-banner{
+        padding-top: 5rem;
+        height: 40vh;
+    }
+    .editor-picks{
+        padding: 1rem;
+    }
+  }
+
+  @media (max-width: 639px) {
+    /* CSS code for small screens */
+      
+
+    .editor-picks{
+        padding: 1rem;
+    }
+
+    .editor-picks .e-p-banner{
+        padding-top: 2rem;
+        height: 70vh;
+    }
+  }
  
 
 
