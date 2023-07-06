@@ -535,6 +535,133 @@ header .side-header > *{
   }
 
 
+  /* Top Creators section */
+
+  .creators_wrapper{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+
+  .creators_wrapper .avatar_wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+
+  .creators_wrapper .avatar_wrapper img{
+     width: 5.3rem;
+     height: 5.3rem;
+     border-radius: 50%;
+     object-fit: cover;
+     margin-right: 1rem;
+  }
+
+  .creators_wrapper .avatar_wrapper h3{
+      font-size: 1.4rem;
+  }
+
+
+
+  /* making the top creator section responsive */
+
+
+  @media (max-width: 639px) {
+    /* CSS code for small screens */
+    .creators_wrapper{
+        flex-direction: column;
+        align-content: center;
+    }
+  }
+
+
+  /* the subscribe banner section */
+
+  .banner.subscribe-banner{
+    text-align: center;
+  }
+
+
+  .subscribe-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+  }
+
+  .subscribe-banner .subscrib-form{
+    display: flex;
+  }
+
+  .subscribe-banner .subscrib-form input {
+     outline: none;
+     border: 1px solid #ebebeb;
+     border-radius: 5px;
+     padding-top: 0.5rem;
+     padding-bottom: 0.5rem;
+     padding-right: 5rem;
+     padding-left: 0.5rem;
+  }
+
+  .subscribe-banner .subscrib-form button{
+    background-color: var(--red-color);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  /* making the subscribe banner responsive */
+
+  @media (max-width: 639px) {
+    /* CSS code for small screens */
+    .subscribe-banner{
+       flex-direction: column;
+       align-content: center;
+      }
+
+      .subscribe-banner h2{
+        margin-bottom: 2rem;
+    }
+    .subscribe-banner .subscrib-form input{
+       padding-right: 3rem;
+    }
+    .subscribe-banner .subscrib-form{
+        padding: 1rem;
+    }
+
+      
+  }
+
+
+  @media (min-width: 640px) and (max-width: 821px) {
+    /* CSS code for medium screens */
+
+    .subscribe-banner h2{
+        margin-bottom: 2rem;
+    }
+
+    .subscribe-banner{
+        flex-direction: column;
+        align-content: center;
+       }
+    
+    }
+      
+  
+  
+
+
+
+  
+
+  
+
+
   
 
  
