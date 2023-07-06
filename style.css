@@ -309,6 +309,7 @@ header .side-header > *{
     /* CSS code for small screens */
     .news-wrapper .news-item{
         padding: 1rem;
+        
     }
     .title{
         padding: 1rem;
@@ -317,6 +318,8 @@ header .side-header > *{
     .title h1{
         font-size: 1.5rem;
     }
+
+    
   }
 
   @media (min-width: 640px) and (max-width: 821px) {
@@ -483,6 +486,53 @@ header .side-header > *{
     }
   }
  
+
+  /* Business and sport news section */
+  .business_sport{
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 1.5rem; 
+  }
+
+
+  .news-wrapper.sport-item .news-item > img {
+    height: 63%;
+  }
+
+  /* making the business and news section responsive */
+
+  @media (max-width:1114px){
+    .business_sport{
+        grid-template-columns: 1fr;
+    }
+
+    .business-wrapper, .sport-wrapper{
+        padding: 1rem;
+    }
+
+    .title.sport-title{
+        margin-top: 1rem;
+    }
+
+    
+  }
+
+  @media (max-width: 639px) {
+    /* CSS code for small screens */
+   
+    .news-wrapper.sport-item,
+    .news-wrapper.business-item{
+        grid-template-columns:  repeat(auto-fit,minmax(16rem,23rem)) ;
+    }
+
+    .business-wrapper , .sport-wrapper{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+  }
 
 
   
