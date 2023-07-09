@@ -145,6 +145,15 @@ header .side-header > *{
     color: var(--red-color);
 }
 
+@media (min-width: 640px) and (max-width: 821px) {
+    .banner{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+  }
+
+
+
 /* Movie section */
 
 .movie{
@@ -652,8 +661,110 @@ header .side-header > *{
     
     }
       
+
+/* Footer     */
+
+footer {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 12rem;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    padding-left: 1rem;
+
+}
+
+footer .column-1 p{
+    color:#c4c3c7 ;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .column-1 .social-links .fab{
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    color: var(--red-color);
+}
+
+footer .column-2 .nav-item a {
+    color: #8b8b8b ;
+}
+
+footer .column-2 .nav-item ul {
+    margin-top: 1.5rem;
+}
+
+footer .column-2 .nav-item li{
+    margin-bottom: 0.5rem;
+}
+
+
+.navigation-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+}
+
+.navigation-wrapper h1{
+    font-size: 1.4rem;
+}
+
+
+/* Making the footer responsive */
+
+
+@media (max-width: 639px) {
+    /* CSS code for small screens */
+
+    footer{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .navigation-wrapper {
+    
+        grid-template-columns: 1fr;
+    
+    }
+
+    footer .column-1{
+        margin-bottom: 2rem;
+       }
+  }
+
+@media (min-width: 640px) and (max-width: 980px) {
+    /* CSS code for medium screens */
+   footer{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+   }
+   footer .column-1{
+    margin-bottom: 2rem;
+   }
+   footer .column-2{
+    padding: 1.5rem;
+   }
+
+
+   .navigation-wrapper {
+    
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+
+   
+
+
+  }
+
   
   
+
 
 
 
