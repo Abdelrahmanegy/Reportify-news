@@ -762,7 +762,20 @@ footer .column-2 .nav-item li{
 
   }
 
-  
+/* the go to top button    */
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    box-shadow: 0 0 2px 1px rgb(182, 179, 179);
+    border-radius: 50%;
+    display: none;
+}
   
 
 
