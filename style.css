@@ -776,6 +776,17 @@ footer .column-2 .nav-item li{
     border-radius: 50%;
     display: none;
 }
+
+
+/* copyright */
+
+.copyright{
+    text-align: center;
+}
+
+.copyright p {
+    color: #8b8b8b;
+}
   
 
 
