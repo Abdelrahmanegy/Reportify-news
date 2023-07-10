@@ -13,7 +13,7 @@ Reportify is a responsive modern news website.
 
 ![mobile](https://github.com/Abdelrahmanegy/Reportify-news/assets/105970352/a2287ffa-fe84-4cc1-a99a-2b032aa77b11)
 
-Contact me at : abdelrahamansamer71@gmail.com
+Contact me at : abdelrahamansamer71@gmail.com <br>
 Support my work : paypal.me/abdelrahmansamer835
 
 
