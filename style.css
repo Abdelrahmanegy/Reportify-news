@@ -159,7 +159,6 @@ header .side-header > *{
 .movie{
     margin-top: 5rem;
     display: flex;
-    
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
@@ -246,7 +245,7 @@ header .side-header > *{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
-    
+   padding: 1rem;
 }
 
 
@@ -274,6 +273,7 @@ header .side-header > *{
     grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
     column-gap: 1.5rem;
     row-gap: 5rem;
+    padding: 1rem;
 }
 
 
